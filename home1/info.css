@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main--color: #0e181b;
+    --main2--color: #d10038;
+    --main3--color: #e0003c;
+    --bg--color: #000;
+    /* --bg--color: #061014; */
+    /* --text--color: #4e4e50; */
+    --text--color: #ffffff;
+    --big-font: 5rem;
+    --h2-font: 2.25rem;
+    --p-font: 0.9rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #061014;
+    color: #e2e9e1;
+}
+
+.section-p1 {
+    padding: 50px 80px;
+}
+
+#page-header.about-header img {
+    /* background-image: url(project\img\banner.png); */
+    width: 100%;
+    height: 40vh;
+    /* padding: 14px; */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-header h1 {
+    font-size: 50px;
+    /* padding: 0; */
+    /* margin: 0; */
+    z-index: 4;
+    line-height: 90px;
+    color: white;
+}
+
+.about-header p {
+    /* margin: 0; */
+    color: #cdebbc;
+    font-size: 15px;
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+#about-head img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#about-head h2 {
+    font-size: 40px;
+    padding: 10px;
+}
+
+#about-head p {
+    margin: 10px;
+    /* padding: 10px; */
+    font-size: 20px;
+    color: #e2e9e1;
+}
+
+#about-head div {
+    color: #cdebbc;
+    padding-left: 40px;
+}
+#about-head .abbr-1{
+    /* margin: 20px; */
+    text-align: center;
+    font-size: 15px;
+    /* padding-left: 27px; */
+}
+
+#about-app {
+    text-align: center;
+}
+
+#about-app .video {
+    width: 100%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#about-app .video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}

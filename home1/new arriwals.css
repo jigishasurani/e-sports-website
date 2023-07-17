@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}   
+
+   
+.main-shop{
+  background: #000;
+  /* background: #0e181b; */
+  margin: 80px 50px 50px 50px;
+  border-radius: 10px;
+  box-shadow: #111115 6px 6px 12px 0px;
+  /* box-shadow: 4px 4px 4px 4px blue; */
+}
+.newarriwals{
+  display: flex;
+  min-height: 60vh;
+  align-items: center;
+  justify-content: center;
+
+}
+.heading-1 {
+    text-align: left;
+    font-size: var(--big-font);
+    font-weight: 600;
+    padding: 20px 0px 0px 120px;
+  }
+  .heading-1 hr{
+    width: 90%;
+    margin: 10px 0 15px 0;
+    border: 2px solid #d10038;
+  }
+.wrapper{
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #000000;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+  z-index: 10;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #afa7a7;
+}
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: smooth;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  padding-top: 0.8px;
+  margin-left: 14px;
+  margin-top: 15px;
+  margin-bottom: 1px;
+  margin-right: 14px;
+  width: calc(100% / 4);
+  opacity: 80%;
+  transition: 0.5s;
+}
+.carousel img:hover{
+  box-shadow: rgba(255, 25, 0,0.6) 6px 6px 10px 4px;
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+@media screen and (max-width: 1140px) {
+  .carousel img{
+    width: calc(100% / 3);
+  }
+}
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 720px) {
+  .carousel img{
+    width: 60%;
+  }
+}

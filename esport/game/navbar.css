@@ -1,0 +1,126 @@
+
+/* navbr */
+nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: transparent;
+    /* ----to change */
+    z-index: 1;
+    padding: 0px 70px;
+  }
+  
+  nav a img {
+    position: relative;
+    top: 0px;
+    height: 10rem;
+  }
+  /* burger icon css*-------------------*-*-*-*-*-*-* */
+  #menu-icon {
+    font-size: 5rem;
+    cursor: pointer;
+    color: var(--text--color);
+    display: none;
+  }
+  
+  nav ul {
+    display: flex;
+    grid-gap: 4.4rem;
+  }
+  
+  .navbar a {
+    position: relative;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    color: var(--text--color);
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding-right: 1.5rem;
+  }
+  
+  .navbar .ctn {
+    border-radius: 50px;
+    padding: 10px 15px;
+    background: var(--main3--color);
+  }
+  .navbar .ctn:hover{
+    color: #0e181b;
+  }
+  
+  /*<!-----------  effect for .navbar underline -------------- >*/
+  .underline::after {
+    position: absolute;
+    height: 2px;
+    bottom: 0px;
+    right: 1.5rem;
+    width: 0%;
+    display: block;
+    content: "";
+    background: var(--main3--color); /*yet to change*/
+    transition: 0.5s;
+  }
+  
+  .underline:hover::after {
+    width: 80%;
+    color: var(--main3--color); /*yet to change*/
+    /* color: #02f3e2ba; */
+  }
+  
+  .navbar a:hover {
+    color: var(--main3--color); /*yet to change*/
+    font-weight: 500;
+    transition: all 0.5s;
+  }
+  
+  @media (max-width:1140px) {
+   
+    .logo {
+      height: 8rem;
+      position: fixed;
+      top: 1rem;
+      z-index: 1;
+    }
+    #menu-icon {
+      position: fixed;
+      top: 2.5rem;
+      right: 20px;
+      display: initial;
+      color: var(--text--color);
+      z-index: 1; 
+    }
+    .content {
+      opacity: 0;
+      visibility: hidden;
+    }
+    nav {
+      padding: 0 20px;
+      top: 0;
+    }
+    .nav-1 ul {
+      position: fixed ;
+      height: 100vh;
+      opacity: 90%;
+      top: 0px;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: 0.4s;
+      transform: translateX(100%);
+    }
+    .nav-1 ul.active {
+      transform: translateX(0);
+      background: var(--bg--color);
+      left: 0px;
+    }
+    .col {
+      width: 50%;
+      margin-bottom: 10px;
+    }
+  }

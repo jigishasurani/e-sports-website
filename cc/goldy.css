@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main--color: #d10038;
+    --bg-color: #1e1c2a;
+    --text--color: #f5f5f5;
+    --big-font: 5rem;
+    --h2-font: 2.25rem;
+    --p-font: 0.9rem;
+}
+
+html {
+    overflow-x: hidden;
+    background: black;
+    color: var(--text--color);
+    /* font-size: 62.5%; */
+}
+
+
+/*------------------------------------------------------------------------- */
+/* -----------------------------background banner--------------------------- */
+.img-container {
+    padding: 10px;
+    border: 2px solid wheat;
+}
+
+.img-container img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+
+ /**********************************************************************/
+/* -------------------------logo container---------------------------- */
+.logo {
+    margin: -80px 0px 0px 60px;
+}
+
+.logo img {
+    width: 15%;
+    border-radius: 50%;
+    border: 3px solid wheat;
+}
+
+
+ /******************************************************************** */
+/*------------------- content section information---------------------- */
+.content-heading {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.content-heading h2 {
+    display: inline-block;
+    transition: 0.4s;
+}
+
+/* .content-heading h2:hover {
+    -webkit-text-stroke: 2px #fff;
+    cursor: pointer;
+    color: transparent;
+} */
+
+.content-text {
+    padding: 40px;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
+
+/* ***************************************************************/
+/*------------------------------ recent video section ----------------- */
+.recent-video {
+    padding: 10px;
+}
+
+.recent-video hr {
+    margin: 0px 40px;
+    border: 2px solid wheat;
+    background: wheat;
+}
+
+
+/*------------------  heading secton--------------- */
+
+.r-heading {
+    padding: 10px;
+    color: var(--text--color);
+    font-size:2.1rem;
+    text-align: center;
+}
+
+.r-heading h2 {
+    display: inline-block;
+    transition: .4s;
+}
+
+/* .r-heading h2:hover {
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    cursor: pointer;
+} */
+/*------------- video css---------------------- */
+.r-video {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(209, 0, 56,0.5);
+    /* background: #d10038; */
+    border-radius: 40px;
+}
+
+.y-video {
+    width: 220px;
+    height: 220px;
+}
+
+.y-video iframe {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    right: 50px;
+    width: 150%;
+    height: calc(0.5625 * 24vw);
+    max-width: 1280px;
+    max-height: 720px;
+    min-width: 320px;
+    min-height: 180px;
+    border-radius: 10px;
+}
+/*------------------------ under video text------------------ */
+.box h2 {
+    padding: 20px;
+    font-size: 1.3rem;
+    color: var(--text--color);
+}
+
+
+/* ---------------------------------------------------------------- */
+/* ----------------------------social section ------------------------- */
+.social-2 hr {
+    margin: 10px 40px;
+    border: 2px solid wheat;
+    background: wheat;
+}
+
+.social-heading {
+    font-size:2rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-heading h2 {
+    display: inline-block;
+    transition: .4s;
+}
+
+.social-heading h2:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    cursor: pointer;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    font-size: 5rem;
+    background:var(--main--color);
+    color: var(--text--color);
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.social-icon a:hover {
+    transform: scale(1.2);
+    color: black;
+    background: var(--text--color);
+}
+
+.social-icon h3 {
+    padding: 10px;
+    color: var(--text--color);
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+/*------------------------------------------------------------------------- */
+/* -------------------------footer section----------------------------- */
+.footer-1 {
+    border-top: 3px solid wheat;
+    transition: 0.4s;
+}
+
+.footer-1 hr {
+    margin: 0px 40px;
+    border: 2px solid wheat;
+    background: wheat;
+}
+
+.main {
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 100px;
+}
+
+.footer {
+    padding: 0px 0px;
+}
+
+.col {
+    width: 25%;
+}
+
+.col h4 {
+    margin-bottom: 25px;
+    color: var(--text--color);
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.col h4::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background: black;
+}
+
+.col ul li:not(last-child) {
+    margin-bottom: 15px;
+}
+
+.col ul li a {
+    color: #9897a9;
+    font-size: 1.1rem;
+    /* display: block; */
+    display: inline-block;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+
+.col ul li a:hover {
+    color: #d10038;
+    transform: translateX(-10px);
+}
+
+.col .social-1 {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col .social-1 a {
+    height: 40px;
+    width: 40px;
+    background: black;
+    color: var(--text--color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.col .social-1 a:hover {
+    transform: scale(1.2);
+    color: black;
+    background: var(--main--color);
+}

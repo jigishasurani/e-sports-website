@@ -1,0 +1,144 @@
+
+* {
+    box-sizing: border-box;
+  }
+  button.normal {
+    font-size: 12px;
+    font-weight: 600;
+    padding:10px 15px;
+    color: #fff;
+    background-color: #d10038;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+.row{
+  margin: 80px 50px 50px 50px;  
+  box-shadow: #111115 6px 6px 12px 0px;
+}  
+.leftcolumn {   
+  float: left;
+    width: 65%;
+    /* padding-left: 7px;
+    padding-bottom: 7px; */
+    /* background: #ffffff; */
+  }
+  
+  .rightcolumn {
+    float: left;
+    width: 35%;
+    /* padding-left: 5px;
+    padding-right: 7px; */
+    background: #ffffff;
+  }
+  
+  .news-heading {
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+  }
+  .news-heading hr {
+    border: 1px solid #d10038;
+    margin: 10px auto;
+    width: 70%;
+    /* text-align: center; */
+    /* filter: blur(0.5rem); */
+    /* background: rgb(253, 5, 5); */
+  }
+  .newscontent {
+    background-color:#000000;
+    /* border-radius: 10px;   */
+    /*background: #0e181b;yet to chnage*/
+    width: 100%;
+    font-weight: 600;
+    padding: 10px 20px 10px 20px;
+  }
+  .newscontent hr{
+    width: 18%;
+    margin: 5px 0;
+    border: none;
+    border-top: 2px dotted #d10038;
+    height: 1px;
+  }
+
+  .wallpapercontent {
+    background-color: #000000;
+ /* background: #0e181b;yet to chnage*/
+  border-radius: 10px;  
+    padding: 10px 5px 5px 5px;
+    z-index: 1000;
+  }
+
+  .contentdesc{
+    padding-top: 5px;
+  }
+  .contentdesc p{
+    font-size: 14px;
+  }
+  .card {
+     background-color: #000000;
+     padding: 20px;
+     /* margin-top: 7px; */
+     height: 420px;
+     /* width: 100%; */
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+a {
+	/* color: #4f7f90; */
+	color: #fff;
+	text-decoration: none;
+	outline: none;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+a:hover, a:focus {
+  /* color: #39545e; */
+	color: #fff;
+}
+.effect-ruby{
+  padding-left: 53px;
+}
+
+
+  figure.effect-ruby:hover img {
+    opacity: 0.5;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+ 
+  .grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+  }
+  figure.effect-ruby p {
+    /* margin: 1em 0 0; */
+    padding: 1em;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,20px,0) scale(1.1);
+    transform: translate3d(0,20px,0) scale(1.1);
+  } 
+
+  figure.effect-ruby:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0) scale(1);
+    transform: translate3d(0,0,0) scale(1);
+  }
