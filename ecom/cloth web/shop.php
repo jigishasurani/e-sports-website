@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="shop.css">
+
     <?php
     require('function.php');
     ?>
     <style>
+        
         .dropdown {
             position: relative;
             display: inline-block;
