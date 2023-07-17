@@ -1,5 +1,5 @@
 <div class="footer-1">
-        <!-- <hr> -->
+
         <div class="footer-2">
             <div class="main">
                 <div class="col">
