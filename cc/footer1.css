@@ -92,6 +92,7 @@
     color: var(--text--color);
     background: var(--main3--color);
   }
+
   .main .copyright{
     /* display: block; */
     width: 100%;
