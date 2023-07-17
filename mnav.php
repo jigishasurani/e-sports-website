@@ -25,6 +25,7 @@ $con1 = new mysqli("localhost", "root", "", "s8ul");
     .img:hover {
         box-shadow: 2px 2px 10px 3px #ff55a3;
     }
+    
 .flex{
     margin-top: 30px;
 }
