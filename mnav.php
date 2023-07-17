@@ -6,7 +6,6 @@ $con1 = new mysqli("localhost", "root", "", "s8ul");
         position: relative;
         display: inline-block;
     }
-
     .dropdown-content {
         display: none;
         position: absolute;
