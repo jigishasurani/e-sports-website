@@ -9,8 +9,6 @@ ob_start();
 
 <body  bgcolor="#faf9f8" >
 
-<!--table-1-->
-
 <table border="0" width="100%" >
   <tr align="center">
 <td colspan="11">&nbsp;</td>
