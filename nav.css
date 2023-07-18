@@ -93,6 +93,7 @@ nav {
       color: var(--text--color);
       z-index: 1; 
     }
+      
     .content {
       opacity: 0;
       visibility: hidden;
